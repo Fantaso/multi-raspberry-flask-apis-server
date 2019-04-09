@@ -1,0 +1,26 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+marshmallow = "*"
+flask-marshmallow = "*"
+marshmallow-sqlalchemy = "*"
+requests = "*"
+psutil = "*"
+netaddr = "*"
+ipaddress = "*"
+wifi = "*"
+Flask = "*"
+Flask-RESTful = "*"
+Flask-Script = "*"
+Flask-Migrate = "*"
+Flask-SQLAlchemy = "*"
+Flask-Bcrypt = "*"
+PyJWT = "*"
+
+[requires]
+python_version = "3.6"
