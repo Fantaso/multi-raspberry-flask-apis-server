@@ -52,13 +52,13 @@ class Measurement(db.Model):
     @staticmethod
     def latest(self):
         latest = Measurement.query.order_by('-timestamp').first()
-        if not last:
+        if not latest:
             return {'message': 'No measurements yet'}
-        return last
+        return latest
 
     @staticmethod
     def last(self, number):
         measurements = Measurement.query.order_by('-timestamp').all().limit(number)
-        if not last:
+        if not measurements:
             return {'message': 'No measurements yet'}
         return measurements
