@@ -62,8 +62,7 @@ class Threshold(db.Model):
         db.session.delete(self)
         db.session.commit()
 
-    @staticmethod
-    def restore():
+    def restore(self):
         from utils.default import threshold_data
         self.update(threshold_data)
         return 'restored'
